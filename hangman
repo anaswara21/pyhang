@@ -1,0 +1,16 @@
+import os
+from random import choice
+def cls():
+    os.system("cls")
+ words=['python','java','sql','javascript']
+word = choice(words)
+print("hangman)
+input('Press Enter To Start')
+cls()
+#it is a empty list to store the hidden words 
+hidden_word=[]
+word_list = []
+for _ in range(len(word)):
+    hidden_word.append('*')    
+for c in word:
+    word_list.append(c)
